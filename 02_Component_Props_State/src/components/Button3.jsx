@@ -5,7 +5,7 @@ const Button3 = (props) => {
 
   return (
     <div>
-        <button style={{color:props.color}}> {props.text} 버튼 </button>
+        <button style={{color:props.color}}> {props.text} 버튼, 가격 : {props.price} </button>
 
     </div>
   )
