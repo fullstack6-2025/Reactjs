@@ -6,6 +6,7 @@ import Lab5 from "./components/Lab5"
 import Lab6 from "./components/Lab6"
 import Movie from "./components/Movie"
 import { dumy } from "./Dumy"
+import "./App.css"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <h1> JONS 파일에서 영화 정보를 불러와서 출력 </h1>
       <hr /> 
 
+      <div className="app-container">
       {
         dumy.results.map( (item) => {
 
@@ -31,7 +33,7 @@ function App() {
           />
         })
       }
-
+    </div>
 
     </>
   )
