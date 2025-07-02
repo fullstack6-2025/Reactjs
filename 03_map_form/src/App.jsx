@@ -4,6 +4,8 @@ import Lab3 from "./components/Lab3"
 import Lab4 from "./components/Lab4"
 import Lab5 from "./components/Lab5"
 import Lab6 from "./components/Lab6"
+import Movie from "./components/Movie"
+import { dumy } from "./Dumy"
 
 function App() {
 
@@ -15,6 +17,22 @@ function App() {
         <Lab4 />
         <Lab5 />
         <Lab6 />
+
+      <h1> JONS 파일에서 영화 정보를 불러와서 출력 </h1>
+      <hr /> 
+
+      {
+        dumy.results.map( (item) => {
+
+          return <Movie 
+                  title={item.title}
+                  poster_path={item.poster_path}
+                  vote_average={item.vote_average}
+          />
+        })
+      }
+
+
     </>
   )
 }
