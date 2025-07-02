@@ -12,8 +12,6 @@ const Lab3 = () => {
         fruits.push(<li> {fruitsName[i]}</li>); 
     }
 
-
-
   return (
     <div>
         <h1> Lab3 -  for 문을 사용 해서 출력 </h1>
