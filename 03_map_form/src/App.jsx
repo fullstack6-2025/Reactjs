@@ -7,6 +7,7 @@ import Lab6 from "./components/Lab6"
 import Movie from "./components/Movie"
 import { dumy } from "./Dumy"
 import "./App.css"
+import Register from "./components/Register"
 
 function App() {
 
@@ -34,6 +35,8 @@ function App() {
         })
       }
     </div>
+
+    <Register />
 
     </>
   )
