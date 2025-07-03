@@ -41,7 +41,7 @@ const onChangeBio = (e) => {
 
   return (
     <div>
-        <h1> 간단한 회원 가입 폼 처리 </h1>
+        <h1> 간단한 회원 가입 폼 처리 : Register 컴포넌트 </h1>
         <hr /> 
         <div>
             <input
