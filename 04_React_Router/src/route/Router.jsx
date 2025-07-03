@@ -4,6 +4,8 @@ import About from "../pages/About"
 import Footer from "../pages/Footer"
 import Company from "../pages/Company"
 import Gallery from "../pages/Gallery"
+import Edit from "../pages/Edit"
+import Edit2 from "../pages/Edit2"
 
 const Router = () => {
   return (
@@ -15,6 +17,8 @@ const Router = () => {
       <Route path = "/footer" element= {<Footer />}></Route>
       <Route path = "/company" element= {<Company />}></Route>
       <Route path = "/gallary" element= {<Gallery/>}></Route>
+      <Route path = "/edit/:id" element = {<Edit />}></Route>
+      <Route path = "/edit2" element={<Edit2 />}> </Route>
     </Routes>
 
     </>

@@ -17,7 +17,13 @@
     Link   : 페이지 새로고침 없이 이동할 수 있는 링크
     useNavigate() 훅 : 이벤트가 발생할때 특정 페이지 이동 (location.href = "/") <== 전체 페이지 
       - 원하는 컴포넌트, 페이지만 호출 
-    
+  
+  react-router-dom: v6 의 새로운 기능 3가지 
+  1. Path Variable 사용 가능 : "http://localhost:3000/edit/:id",   useParms() 훅에서 처리 
+  2. Query String (파라미터) 사용 가능 : useSearchParms() 훅에서 처리  
+        "http://localhost:3000/edit?id=1&mode=abc&name=홍길동"
+  3. useNavigate() 사용 가능 : 이벤트 처리시 함수 블락에서 페이지 이동
+
 */
 import { Link } from "react-router-dom"
 import Router from "./route/Router"
@@ -38,6 +44,8 @@ function App() {
             <li> <Link to ="/footer"> Footer </Link></li>
             <li> <Link to ="/company"> Company </Link></li>
             <li> <Link to ="/gallary"> Gallery </Link></li>
+            <li> <Link to = "/edit/100"> Edit : Path Variable 예제 </Link></li>
+            <li> <Link to = "/edit2?id=200&mode=abc"> Edit2 : Query String  예제 </Link></li>
             <li> ==========useNavigate() 훅 사용 : 이벤트에 대해서 이동==========</li>
             <li> 
               <button onClick = {()=>{navigate("/")}}> 홈으로 이동 </button>
